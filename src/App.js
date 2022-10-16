@@ -5,8 +5,8 @@ function App() {
   return (
     <div className="App">
       <Container maxWidth="sm">
-        <Box sx={{ my: 4 }}>
-          <Typography variant="h2" component="h1" gutterBottom>
+        <Box sx={{ my: 4 }} alignItems="center" justifyContent="center">
+          <Typography variant="h2" component="h1" color="primary" gutterBottom>
             Chuck Norris Jokes
           </Typography>
         </Box>
