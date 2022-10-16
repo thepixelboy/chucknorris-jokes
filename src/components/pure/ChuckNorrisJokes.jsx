@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Button, Typography } from "@mui/material";
 import getRandomJoke from "../../services/ChuckNorrisAPI";
 
 const ChuckNorrisJokes = () => {
@@ -18,8 +19,12 @@ const ChuckNorrisJokes = () => {
 
   return (
     <div>
-      <button onClick={getJoke}>Get a joke</button>
-      <p>{joke.value}</p>
+      <Typography variant="h5" mb={2} gutterBottom>
+        {joke.value}
+      </Typography>
+      <Button variant="contained" size="large" onClick={getJoke}>
+        {joke !== "" ? "Get another joke" : "Get a joke"}
+      </Button>
     </div>
   );
 };
